@@ -102,10 +102,10 @@ export default class WorldMap extends Component {
                 Population : {this.state.info.population}
               </h3>
               <h3 className={styles.popup_case}>
-                Nombre de cas : {this.state.info.cases}
+                Nombre de cas recensés : {this.state.info.cases}
               </h3>
               <h3 className={styles.popup_country_deaths}>
-                Nombre de morts : {this.state.info.deaths}
+                Nombre de morts recensés : {this.state.info.deaths}
               </h3>
             </div>
 

@@ -30,7 +30,7 @@ const Charts = ({ data: { confirmed, recovered, deaths }, country }) => {
           {
             data: fetchData.map((data) => data.death),
             label: "Décédés",
-            borderColor: "red",
+            borderColor: "#ff5733",
             backgroundColor: "rgba(255,0,0,0.5)",
             fill: true,
           },
@@ -41,15 +41,11 @@ const Charts = ({ data: { confirmed, recovered, deaths }, country }) => {
   const barChart = confirmed ? (
     <Bar
       data={{
-        labels: ["Contaminés", "Soignés", "Décès"],
+        labels: ["Contaminés", "Soignés", "Décédés"],
         datasets: [
           {
             label: "Individus",
-            backgroundColor: [
-              "rgba(0,0,255,0.5)",
-              "rgba(43, 255, 0, 0.5)",
-              "rgba(255, 17, 0, 0.5)",
-            ],
+            backgroundColor: ["purple", "green", "#ff5733"],
             data: [confirmed.value, recovered.value, deaths.value],
           },
         ],
