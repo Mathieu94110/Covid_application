@@ -12,7 +12,7 @@ const CountryPicker = ({ handleCountryChange }) => {
     };
     fetchApi();
   }, [setCountriesData]);
- console.log(countriesData);
+
     return (
 
       <div className={styles.picker}>

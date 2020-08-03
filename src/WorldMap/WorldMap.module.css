@@ -1,0 +1,29 @@
+.container {
+  margin-top: 100px;
+  margin-bottom: 400px;
+}
+.container_two {
+  margin: 100px 0;
+}
+.popup {
+  background-color: #ff5733;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px 0;
+  font-size: 1em;
+}
+
+h2 {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: gold;
+}
+
+h3 {
+  margin: 0;
+}

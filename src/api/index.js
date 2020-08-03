@@ -22,30 +22,36 @@ export const fetchData = async (country) => {
 
 export const fetchDailyData = async () => {
   try {
-      const { data } = await axios.get(`${url}/daily`);
-   
-      const  modifiedData  = data.map((dailyData) => ({
-        confirmed: dailyData.confirmed.total,
-        death: dailyData.deaths.total,
-        date: dailyData.reportDate,
-      }));
-console.log(modifiedData);
-      return modifiedData;
-      
+    const { data } = await axios.get(`${url}/daily`);
+
+    const modifiedData = data.map((dailyData) => ({
+      confirmed: dailyData.confirmed.total,
+      death: dailyData.deaths.total,
+
+      date: dailyData.reportDate,
+    }));
+
+    return modifiedData;
   } catch (error) {
     console.log(error);
   }
 };
 
-
 export const fetchCountries = async () => {
-    try {
-        const { data:{ countries } } = await axios.get(`${url}/countries`);
-      return countries.map((country) => 
-        country.name
-      );
+  try {
+    const {
+      data: { countries },
+    } = await axios.get(`${url}/countries`);
+    return countries.map((country) => country.name);
+  } catch (error) {
+    console.log(error);
+  }
+};
 
-    } catch(error){
-        console.log(error);
-    }
-}
+export const fetchCountriesDataLocation = async () => {
+  try {
+    const { data } = await axios.get("https://corona.lmao.ninja/v2/countries");
+    console.log("API DATA", data);
+    return data;
+  } catch (error) {}
+};

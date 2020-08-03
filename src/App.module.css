@@ -1,8 +1,11 @@
 .App {
   text-align: center;
-  margin: 50px 0;
+  margin: 4%;
 }
-
+.image {
+  padding-top: 20px;
+  padding-bottom: 50px;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
