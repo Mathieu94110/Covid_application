@@ -1,3 +1,7 @@
-.picker{
-    margin : 40px 0;
+.picker {
+  margin: 40px 0;
+}
+.select {
+  z-index: 1000;
+  background-color: white;
 }

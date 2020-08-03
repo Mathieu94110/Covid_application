@@ -8,7 +8,6 @@ import { Tile as TileLayer, Vector as VectorLayer } from "ol/layer";
 import { Vector as VectorSource, OSM } from "ol/source";
 import Feature from "ol/Feature";
 import Circle from "ol/geom/Circle";
-import Fill from "ol/style/Fill";
 
 export default class WorldMap extends Component {
   constructor(props) {

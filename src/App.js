@@ -8,9 +8,6 @@ import WorldMap from "./WorldMap/WorldMap";
 import images from "./images/covid19.jpg";
 
 class App extends Component {
-  constructor() {
-    super();
-  }
   state = {
     data: {},
     country: "",
