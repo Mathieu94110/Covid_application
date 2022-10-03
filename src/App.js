@@ -4,7 +4,6 @@ import Cards from "./Cards/Cards";
 import { fetchData } from "./api";
 import Charts from "./Charts/Charts";
 import CountryPicker from "./countryPicker/countryPicker";
-import WorldMap from "./WorldMap/WorldMap";
 import images from "./images/covid19.jpg";
 
 class App extends Component {
@@ -35,7 +34,6 @@ class App extends Component {
         <Cards data={data} />
         <CountryPicker handleCountryChange={this.handleCountryChange} />
         <Charts data={data} country={country} />
-        <WorldMap />
       </div>
     );
   }
